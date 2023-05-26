@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*section Confings*/
+section{
+    height: 110vh;
+    width: 100%;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+    transition: all 1.5s;
+}
+
+section h1{
+    color: #2185f8;
+    font-size: 3.5em;
+}
+
+
+
+section p{
+    font-size: 1.5em;
+    filter: invert(1);
+}
+
+/*flex-box Confings*/
+.box-shadow-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 35%;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.589);
+}
+
+.internal-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 62.5%;
+    background-color: #2185f8;
+}
+
+.internal-box i, .radius-box i{
+    font-size: 3em;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    color: white;
+}
+/*flex-box Confings*/
+
+/*Inputs configs*/
+/*Input range configs*/
+[type="range"]{
+    width: 200px;
+    appearance: none;
+    background-color: #303030;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+[type="range"]:hover{
+    background-color: #b3b3b3;
+}
+
+[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 14px;
+    width: 20px;
+    background-color: #2185f8;
+    border-radius: 7px;
+    cursor: pointer;
+}
+/*Input range configs*/
+
+/*Input color configs*/
+[type="color"]{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
+/*Input color configs*/
+
+/*Input text configs*/
+[type="text"]{
+    padding: 4px;
+    border-radius: 7px;
+    outline: none;
+}
+/*Input text configs*/
+
+/*Inputs configs*/
+
+/*Border-radius configs*/
+.radius-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 35%; 
+    background-color: #2185f8;
+}
+/*Border-radius configs*/
+
+/*section Confings*/
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: #252525;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #2185f8;
+}

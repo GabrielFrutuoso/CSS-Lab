@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------CSS-------------------------->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <!-------------------CSS-------------------------->
+
+    <!-------------------JS-------------------------->
+    <script src="JS/script.js" defer></script>
+    <!-------------------JS-------------------------->
+
+    <title>CSS3 Lab</title>
+</head>
+<body>
+    <section id="intro">
+        <div class="text">
+            <h1 class="mdi mdi-flask-empty-outline">CSS3 Lab</h1>
+        </div>
+    </section>
+
+    <section id="color-picker">
+        <h1 id="text" class="mdi mdi-palette colores">color picker</h1>
+    
+                <div class="cores">
+                    <input type="color" name="color" id="color" onchange="pegarCor()" value="#000000" class="inputCor">
+                </div>
+
+                <p id="result"></p>
+    </section>
+
+    <section id="gradiente">
+        <h1 class="mdi mdi-gradient-horizontal colores">Gradient Tester</h1>
+        <div class="inputs">
+            <input type="text" name="" id="angulo" placeholder="set angle ex.: 45deg" onchange="gradient()">
+        </div>
+
+        <div class="inputs">
+            <input type="color" name="" id="cor1" onchange="gradient()" value="#000000" class="inputCor">
+            <input type="color" name="" id="cor2" onchange="gradient()" value="#000000" class="inputCor">
+        </div>
+
+            <p id="resultGradient"></p>
+    </section>
+
+    <section id="box-shadow">
+        <h1 class="mdi mdi-box-shadow">box-shadow</h1>
+        <div class="box-shadow-box">
+            <div id="internal-box" class="internal-box"><i class="mdi mdi-language-css3"></i></div>
+        </div>
+
+        <p id="resultShadow"></p>
+
+        <div class="inputs"> 
+            <div>
+                <input type="range" name="sombraX" id="sombraX" min="-10" value="0" max="20" onchange="boxShadow()">
+            </div>
+
+            <div>
+                <input type="range" name="sombraY" id="sombraY" min="-10" value="0" max="20" onchange="boxShadow()">
+            </div>
+
+            <div>
+                <input type="range" name="sombraRadius" id="sombraRadius" min="-10" value="0" max="20" onchange="boxShadow()">
+            </div>
+
+            <div>
+                <input type="range" name="sombraSpread" id="sombraSpread" min="-10" value="0" max="20" onchange="boxShadow()">
+            </div>
+        </div> 
+    </section>
+
+    <section id="box-radius">
+       <h1 class="mdi mdi-border-radius">Border Tycoon</h1> 
+
+       <div id="radius-box" class="radius-box">
+        <i class="mdi mdi-language-css3"></i>
+       </div>
+
+       <p id="resultRadius"></p>
+
+       <div class="inputs"> 
+        <div>
+            <input type="range" name="borda1" id="borda1" value="0" max="20" onchange="borderRadius()">
+        </div>
+
+        <div>
+            <input type="range" name="borda2" id="borda2" value="0" max="20" onchange="borderRadius()">
+        </div>
+
+        <div>
+            <input type="range" name="borda3" id="borda3" value="0" max="20" onchange="borderRadius()">
+        </div>
+
+        <div>
+            <input type="range" name="borda4" id="borda4" value="0" max="20" onchange="borderRadius()">
+        </div>
+    </section>
+</body>
+</html>
